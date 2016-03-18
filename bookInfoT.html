@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/mystyles.css">
+</head>
+
+<div style="align-content: center; !important">
+   <div id="info-result" class="row-fluid">
+       <div id="map" class="span12">
+           <h2>
+               <div class="span4">
+                   &nbsp;&nbsp;<img src="assets/images/wayfinder_icon.png"  style="display: inline-block; !important">
+                   Item Location
+               </div>
+           </h2>
+       </div>
+       <div class="span12"></div>
+       <div id="map" class="span4">
+           <a href="" id="map-image-link">
+              <img id="map-image-img" class="rounded-img" src="" alt="map should be here"/>
+           </a>
+           
+       </div>
+       <div id="light" class="white_content"><div class="cross">&times;</div></div><div id="fade" class="black_overlay"></div>
+       <div class="span7" style="width: 63.24999809265%; !important">
+           <table style="box-shadow: 0 1px 3px rgba(117, 81, 2, 0.25); !important">
+               <tr>
+                   <td class="span5" style="vertical-align: middle; border: 0px solid #000; !important">
+                       <img src="" id="book-image3" class="rounded-img2" style="max-height: 316px; !important">
+                   </td>
+                   <td style="border: 0px solid #000; !important">
+                       <table class='table table-bordered'>
+                           <tr>
+                               <th>Title</th>
+                               <td id="title-click"></td>
+                               <td id="title-hidden" style="display:none"><%=model.get('title')%></td>
+                           </tr>
+                           <tr>
+                               <th>Author</th>
+                               <td><%=model.get('author')%></td>
+                           </tr>
+                           <tr>
+                               <th>Call Number</th>
+                               <ul class="pager">
+                                   <td><%=model.get('call_num')%></td>          
+                               </ul>
+                           </tr>
+                           <tr>
+                               <th>Shelf Number</th>
+                               <td id="shelf-click"></td>
+                               <td id="shelf-hidden" style="display:none"><%=model.get('shelf_number')%></td>
+                           </tr>
+                           <tr style="display:none">
+                               <th>Bib ID</th>
+                               <td><div id="bib-id"><%=model.get('bibID')%></div></td>
+                           </tr>
+                           <tr>
+                               <th> Summary </th>
+                               <td id="summary" style="cursor: pointer;"> <center><i>Click here for a short description</i></center> </td>
+                           </tr>
+                           <tr id="ts-button" style="display:none"><th>Related Books</th><td><center><button type="submit" class="btn btn-default" id="call-number" style="width: 174px; height:45px; border: solid 1px rgba(117, 81, 2, 0.75);">
+                               Topic Space <img src = "assets/images/topic_space_button_transparent.png" style="display: inline-block; width: 35px;"></button></center></td></tr>
+
+                           </table><td style="border: 0px solid #000; !important"></td>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+           <br>
+       </div>
+   </div>
+
+   <style>
+       .rounded-img {
+           border: solid 1px #000;
+           overflow: hidden;
+           -webkit-border-radius: 0px;
+           -moz-border-radius: 0px;
+           border-radius: 0px;
+           -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+           -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+           box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+       }
+
+       .rounded-img2 {
+           display: -webkit-box;
+           max-height: 316px;
+           margin: 10px;
+           border: solid 1px #000;
+           overflow: hidden;
+           -webkit-border-radius: 0px;
+           -moz-border-radius: 0px;
+           border-radius: 0px;
+           -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+           -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+           box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+       }
+
+       .black_overlay{
+           display: none;
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           width: 100%;
+           height: 100%;
+           background-color: black;
+           z-index:1001;
+           -moz-opacity: 0.8;
+           opacity: 0;
+           filter: alpha(opacity=80);
+           cursor: pointer;
+       }
+
+       .white_content {
+           display: none;
+           position: absolute;
+           top: 20%;
+           left: 25%;
+           width: 50%;
+           height: 400px;
+           padding: 16px;
+           border: 2px solid #412110;
+           background-color: #dfcea1;
+           z-index:1002;
+           overflow: auto;
+       }
+
+       .cross {
+           position: absolute;
+           right: 0;
+           font-size: 3em;
+           font-style: bold;
+           color: #a3803c;
+           line-height: 0;
+           padding: 0px 16px;
+           margin-top: 20px;
+           cursor: pointer;
+       }
+   </style>
+
+
+   <script type="text/javascript">
+
+       $(document).ready(function(){
+            $("#map-image").fancybox({
+              overlay : {
+                css : {
+                    'background' : 'rgba(58, 42, 45, 0.95)'
+                }
+              }
+            });
+       });
+
+</script>
+<script>
+//var str = model.get('title');
+var str = document.getElementById("title-hidden").innerHTML;
+if(str.length > 32){ 
+   str = str.substring(0,32) + " ...";
+   document.getElementById('title-hidden').style.cursor = "pointer";
+   document.getElementById('title-click').style.cursor = "pointer";
+}
+document.getElementById("title-click").innerHTML = str;
+
+var str2 = document.getElementById("shelf-hidden").innerHTML;
+if(str2.length > 18){ 
+   str2 = str2.substring(0,18) + " ...";
+   document.getElementById('shelf-hidden').style.cursor = "pointer";
+   document.getElementById('shelf-click').style.cursor = "pointer";
+}
+document.getElementById("shelf-click").innerHTML = str2;
+</script>
+</html>

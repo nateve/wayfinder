@@ -1,0 +1,127 @@
+<div>
+    <div class="direct-import">
+         <div class="span9">
+
+                 <div class="img-label">
+                         <img class="inline" id="search" style="position:relative; !important" src="assets/images/search_icon.png"/>
+                         <h1 class="inline">Catalog Search</h1>
+                 </div>
+                 <div class="highlight-box">
+                         <em id="intro-info">Search by keyword, subject, title. You can refine your search by format type using the dropdown.</em>
+                         <div class="search-input">
+                                         <div><form class="form-inline" id="search-form" role="form" align="center">
+                                                         <input type="text" id="search-field" class="form-control" placeholder="Search">
+                                                         <select id="type-selector" data-placeholder="Type" class="type-select chosen-select" tabindex="2">
+                                                                 keyword=all, subject=subject, title=title, author=author, isbn/issn=isn.
+                                                                 <!--<option value=""></option>-->
+                                                                 <option value="all">All</option>
+                                                                 <option value="subject">Subject</option>
+                                                                 <option value="title">Title</option>
+                                                                 <option value="author">Author</option>
+                                                                 <option value="isn">ISBN/ISSN</option>
+                                                                 <option value = "call_num">Call No.</option>
+                                                         </select>
+                                                         <select id="format-selector" data-placeholder="Format" class="type-select chosen-select" tabindex="2">
+                                                                 <!--<option value=""></option>-->
+                                                         </select>
+                                                         <button type="submit" class="btn btn-default" id="show-btn" style="position:relative; !important">Search</button>
+                         <div class="btn btn-default" id="topic-button" style="position:relative; width:10px; !important"></div>
+                                                         </div></div></form>
+
+                                 <div id="topics" style="position:relative; display:none; margin:auto; width:695px; font-size: 90%; !important">
+                                 <table class="table" rules="none" layout="fixed">
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="P"></span>    &nbsp;Language and Literature</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="Q"></span>&nbsp;Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="S"></span>&nbsp;Agriculture</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="H"></span>&nbsp;Social Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="T"></span>&nbsp;Technology</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="D"></span>&nbsp;World History</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="M"></span>&nbsp;Music</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="B"></span>&nbsp;Philosophy, Psychology, Religion</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="N"></span>&nbsp;Fine Arts</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="Z"></span>&nbsp;Library Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="G"></span>&nbsp;Geography, Anthropology, Recreation</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="K"></span>&nbsp;Law</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="R"></span>&nbsp;Medicine</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="J"></span>&nbsp;Political Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="F"></span>&nbsp;General American History</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="E"></span>&nbsp;United States History</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="L"></span>&nbsp;Education</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="A"></span>&nbsp;General Works</td></tr>
+
+                                 <tr><td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="C"></span>&nbsp;Historical Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="U"></span>&nbsp;Military Science</td>
+                                         <td style="border: 0px solid #000; !important"><span class="input-group-addon"><input type="radio" name="classification" value="V"></span>&nbsp;Naval Science</td></tr>
+                         </table></div>
+                                         
+                         
+
+                         <ul class="nav nav-tabs nav-stacked centered" id="books-listing">
+                         </ul>
+
+                        <div class="spin" id="searchLoader" style="display:none;">
+                            <div class="loader">
+                            </div>
+                            <div style="text-align: center;">
+                            </div>
+                        </div>
+                        
+                         <h3 align="center" id="nothing">
+                                 <em>Nothing was found!</em>
+                         </h3>
+                 </div>
+
+                 <ul class="pager">
+                         <li><a id="prev-button" href="">Previous</a></li>
+                         <li><a id="next-button" href="">Next</a></li>
+                 </ul>
+         </div>
+    </div>
+
+</div>
+
+<style>
+.loader {
+  margin: 6em auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(170,139,83, 0.2);
+  border-right: 1.1em solid rgba(170,139,83, 0.2);
+  border-bottom: 1.1em solid rgba(170,139,83, 0.2);
+  border-left: 1.1em solid rgb(170,139,83);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>

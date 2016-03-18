@@ -1,0 +1,162 @@
+<div class="info-result" id="info-result">
+    <div id="results">
+        <div class="span12">
+            <h1>
+                <img class="inline" src="assets/images/topic_space_icon.png"/> Topic Space</h1> </div>
+                <h3><div id="h1"></div></h3>   
+                <h4 id="message" class="span12">
+                </h4>
+                <div id="info-result" class="row-fluid">
+
+                    <script>
+                    html = "";
+
+                    if (topicSpaceModel.attributes[1])
+                    {
+                        title1 = topicSpaceModel.attributes[1].titles;
+                        author1 = topicSpaceModel.attributes[1].authors;
+                        cnr1 = topicSpaceModel.attributes[1].callNumberRange;
+                        bcn1 = topicSpaceModel.attributes[1].bookCallNumber;
+                        bi1 = topicSpaceModel.attributes[1].bibID;
+
+                        title0 = topicSpaceModel.attributes[0].titles;
+                        author0 = topicSpaceModel.attributes[0].authors;
+                        cnr0 = topicSpaceModel.attributes[0].callNumberRange;
+                        bcn0 = topicSpaceModel.attributes[0].bookCallNumber;
+                        bi0 = topicSpaceModel.attributes[0].bibID;
+
+                        $("#h1").append("Related Books");
+                        html += "<div class=\"span5\" style='width: 520px'>";
+                        html += "<table style=\"margin-bottom: 0 !important; vertical-align: middle;\">"; 
+                        html += "<tr>";
+                        html += "<td style=\"vertical-align: middle;min-width: 161px;\">";   
+                        html += "<img src='' id='book-image1' class='rounded-img2'>";
+                        html += "</td>"; 
+                        html += "<td><br>";
+                        html += "<table>";
+                        html += "<th style='min-width: 146px'>Title</th>";
+                        html += "<td style='min-width: 165px'>" + title0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Author</th>";
+                        html += "<td>" + author0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number Range</th>";
+                        html += "<td>" + cnr0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number</th>";
+                        html += "<td>" + bcn0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr style = 'display: none'>";
+                        html += "<th>Bib ID</th>";
+                        html += "<td><div id='bib-id'>" + bi0 + "</div></td>";
+                        html += "</tr>";
+                        html += "</table>";
+                        html += "</td>";
+                        html += "</tr>"; 
+                        html += "</table></div>";
+
+                        html += "<div class=\"span5\" style=\"width: 520px;\"><table style=\"margin-bottom: 0 !important; vertical-align: middle;\">"; 
+                        html += "<tr>";
+                        html += "<td style=\"vertical-align: middle; min-width: 161px;\">";   
+                        html += "<img src='' id='book-image2' class='rounded-img2'>";
+                        html += "</td>"; 
+                        html += "<td><br>";
+                        html += "<table>";
+                        html += "<th style='min-width: 146px'>Title</th>";
+                        html += "<td style='min-width: 165px'>" + title1 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Author</th>";
+                        html += "<td>" + author1 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number Range</th>";
+                        html += "<td>" + cnr1 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number</th>";
+                        html += "<td>" + bcn1 + "</td>";
+                        html += "</tr>";
+                        html += "<tr style = 'display: none'>";
+                        html += "<th>Bib ID</th>";
+                        html += "<td><div id='bib-id2'>" + bi1 + "</div></td>";
+                        html += "</tr>";
+                        html += "</table>";
+                        html += "</td>";
+                        html += "</tr>";
+                        html += "</table></div>";
+                        $("#results").append(html);
+                    }
+
+                    else if (topicSpaceModel.attributes[0])
+                    {
+                        title0 = topicSpaceModel.attributes[0].titles;
+                        author0 = topicSpaceModel.attributes[0].authors;
+                        cnr0 = topicSpaceModel.attributes[0].callNumberRange;
+                        bcn0 = topicSpaceModel.attributes[0].bookCallNumber;
+                        bi0 = topicSpaceModel.attributes[0].bibID;
+
+                        $("#h1").append("Related Books");
+                        html += "<div class=\"span5\" style='width: 520px'>";
+                        html += "<table style=\"margin-bottom: 0 !important; vertical-align: middle;\">"; 
+                        html += "<tr>";
+                        html += "<td style=\"vertical-align: middle;min-width: 161px;\">";   
+                        html += "<img src='' id='book-image1' class='rounded-img2'>";
+                        html += "</td>"; 
+                        html += "<td><br>";
+                        html += "<table>";
+                        html += "<th style='min-width: 146px'>Title</th>";
+                        html += "<td style='min-width: 165px'>" + title0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Author</th>";
+                        html += "<td>" + author0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number Range</th>";
+                        html += "<td>" + cnr0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr>";
+                        html += "<th>Call Number</th>";
+                        html += "<td>" + bcn0 + "</td>";
+                        html += "</tr>";
+                        html += "<tr style = 'display: none'>";
+                        html += "<th>Bib ID</th>";
+                        html += "<td><div id='bib-id'>" + bi0 + "</div></td>";
+                        html += "</tr>";
+                        html += "</table>";
+                        html += "</td>";
+                        html += "</tr>"; 
+                        html += "</table></div>";
+                        $("#results").append(html);
+                    }
+                    else
+                    {
+                        document.getElementById("message").innerHTML = "No related books to be found.";
+                    }
+                    
+                    </script>
+                    </div>
+                    </div>
+                    </div>
+                    <style>
+                        .rounded-img2 {
+                            display: -webkit-inline-box;
+                            height: 250px;
+                            max-width: 159px;
+                            margin: 0px;
+                            border: solid 1px #000;
+                            overflow: hidden;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+                            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+                            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+                        }
+                    </style>
+                    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+                    

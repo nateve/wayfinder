@@ -1,0 +1,12 @@
+{
+  "node": true,
+  "globalstrict": true,
+  "globals": {
+    "angular": false,
+    "Config": true,
+    "loginForm": false,
+    "document": false,
+    "navigator": false,
+    "Camera": false
+  }
+}

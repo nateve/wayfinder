@@ -1,0 +1,296 @@
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Scrollbar fix to make them always on in iOs (only) */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+h4{
+    font-weight: normal;
+}
+
+/* start of classes */
+
+.bg_group {
+    background: url("../img/CollabroomBack_1024.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+}
+
+.bg_welcome {
+    background: url("../img/uglbackground.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+}
+
+.blue_filler {
+    background-color: #022544;
+    height: 2px;
+}
+
+.blue-lt {
+    color: #A0CFED;
+}
+
+.blue-md {
+    color: #92B3DC;
+}
+
+.blue-dk {
+    color: #022544;
+}
+
+.btn-xl {
+    width: 125px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    /*text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4);*/
+    vertical-align: text-bottom;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    color: #022544;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1;
+    background-color: #ccdef3;
+}
+
+.btn-xl:active{
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    transform:scale(0.9);
+    -webkit-box-shadow: 1px 1px 3px #888888;
+    -moz-box-shadow: 1px 1px 3px #888888;
+    box-shadow: 1px 1px 3px #888888;
+    text-shadow: 0px 0px 4px #FFF;
+    color: #FFF;
+}
+
+.btn-wide {
+    width: 225px;
+}
+
+.icon {
+    margin-top:5px;
+    width:100%;
+    font-size: 1.3em
+}
+
+
+.fa-arrow-circle-up, .fa-arrow-circle-down{
+    color:#428bca;
+
+}
+
+
+.fa-circle {
+    color: white;
+}
+
+.blue-circle {
+    color:#428bca;
+
+}
+
+
+.carousel-caption-scrn {
+    background-color: #000;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-indicators {
+    top: 10px !important;
+}
+
+.img-responsive {
+    overflow: hidden;
+    max-width: none !important;
+}
+
+.main_call {
+    letter-spacing: 3px;
+    padding: 3px;
+    background: #FFF;
+    color: #022544;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.news-body {
+    overflow: hidden;
+}
+
+.news-header {
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.news-container {
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.news-image {
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.no_margin {
+    margin: 0;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.unit_name {
+    background-image: url("../img/undergraduate_library_wordmark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.sub_header {
+    background-image: url("../img/subheader.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35px;
+}
+
+
+
+/* ids */
+
+#button_row {
+    width: 100%;
+    position: absolute;
+    bottom: 95px;
+    text-align: center;
+}
+
+#carousel-welcome {
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+
+#bottom{
+    background-color: #022544;
+    width: 100%;
+    height: 80px;
+}
+
+/*CHANGED*/
+.spacer{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 1;
+}
+
+/*CHANGED*/
+.home-logo{
+    position: relative;
+    margin: auto;
+    width: 160px;
+    color: black;
+    height: 100%;
+    background-color: #f7c7a6;
+    padding-left: 15px;
+}
+
+.left-icon{
+    width: 60px;
+    float: left;
+    text-align: center;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.2em;
+}
+
+.right-text{
+    text-align: center;
+    width: 80px;
+    float: left;
+    position: relative;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+
+.fa-home {
+    color: white;
+
+}
+
+.orange-circle {
+    color:#f05a24;
+
+}
+
+/*CHANGED*/
+.copyright-text {
+    float:right;
+    color: white;
+    z-index: 500;
+    padding-top:35px;
+    padding-right: 20px;
+    font-weight:lighter;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+#unit_footer {
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+    font-weight: lighter;
+}
+
+#unit_footer h4 {
+    font-weight: lighter;
+}
+
+#unit_header {
+    position: relative;
+    top: 0;
+    height: 60px;
+    overflow: hidden;
+    background-color: #022544;
+}
+
+
+#upper li, #lower li {
+    padding: 5px 0px;
+    text-decoration: underline;
+}
+
+#upper li:active, #lower li:active {
+    color: #6D79B5;
+}
+
+
