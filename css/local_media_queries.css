@@ -160,17 +160,18 @@ h4{
 }
 
 .unit_name {
-    background-image: url("../img/undergraduate_library_wordmark.png");
+    background-image: url("../assets/images/undergraduate_library_wordmark.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
 }
 
 .sub_header {
-    background-image: url("../img/subheader.png");
+    background-image: url("../assets/images/subheader.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 35px;
+
 }
 
 

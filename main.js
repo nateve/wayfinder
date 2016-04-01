@@ -1,6 +1,6 @@
 "use strict"; // just a test
 
-var serverLink = "http://minrva.library.illinois.edu";
+var serverLink = "http://minrva-dev.library.illinois.edu";
 
 var locations = [];
 locations['uiu_stacks'] = "University of Illinois at Urbana-Champaign >> Main Stacks";
@@ -25,7 +25,7 @@ var Router = Backbone.Router.extend({
 			"loc/:location/:query/:itemID/:format/:callNum": "topicSpace"//"loc/:location/"query/:callNumber/topic-space": "topicSpace"
 		}
 });
-f
+
 var router = new Router();
 
 router.on('route:locationChoose', function() {

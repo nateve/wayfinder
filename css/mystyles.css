@@ -63,6 +63,14 @@ img.format-icon
   bottom: 57px;
 }
 
+ul {
+    background-color: white;
+}
+
+ul li {
+    border: solid lightgray 1px;
+}
+
 div.item-descr
 {
     /*font-style:oblique;*/
@@ -97,7 +105,7 @@ a#toptitle,
 
 .highlight-box
 {
-  background-color: rgb(242, 232, 209);
+  background-color: #ccdef3;
   min-height: 400px;
   padding-bottom: 30px;
 }
@@ -111,9 +119,9 @@ a#toptitle,
   display: block;
 }
 
-.img-label
-{
-  margin-top: 30px;
+.img-label {
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .search-input

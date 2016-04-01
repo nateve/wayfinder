@@ -11,35 +11,24 @@
 	<link rel="stylesheet" href="./css/mystyles.css">
 	<!--<script src="http://localhost:35729/livereload.js"></script>-->
 	<link rel="stylesheet" href="./assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="./css/local_media_queries.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 <body>
 <div id="wrap">
-<div class="navbar">
-	<div class="navbar-inner"> 
-		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
-			<span class="icon-bar"></span> 
-			<span class="icon-bar"></span> 
-			<span class="icon-bar"></span> 
-		</a> 
-		<a class="brand with-img" href="#"><img src="assets/images/minrva_web_title_icon.png"/></a>
-		<div class="nav-collapse">
-			<ul class="nav pull-left">
-				<li class="divider-vertical"></li>
-				<li><img src="assets/images/location_bar_icon.png"/>Current Location:<a id="toptitle" href="#"></a></li>
-				<li class="divider-vertical"></li>
-			</ul>
-			<ul class="nav pull-right">
-				<li class="divider-vertical"></li>
-				<li><a href="http://minrvaproject.org/download.php">Add app to your phone!</a></li>
-				<li class="divider-vertical"></li>
-			</ul>
-		</div>
-			<!-- /.nav-collapse --> 
-	</div>
-		<!-- /navbar-inner -->
-</div>	
-	<!-- /navbar -->
+    <div>
+        <div class="row" id="unit_header">
+            <div class="col-xs-12 col-md-6">
+                <h4 class="unit_name"></h4>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h4 class="sub_header"></h4>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+    <!-- main call to action //-->
 
 <div id="page">
 
@@ -208,50 +197,16 @@
 
 <div id="push"></div>
 </div>
-<footer id="footer" class="footer">
-	<div class="container"><!--footer container-->
-		<div class="row-fluid">
-			<div class="span4">				
-				<section>
-					<div class="footer-header">Support</div>					
-					<p>
-						<a  href="http://illinois.edu/">
-							<img style="float:left;padding-right: 5px;" alt="University of Illinois homepage" src="assets/images/uiuc_logo.png">
-						</a>
-						Minrva is developed and maintained by the <a href="http://www.library.illinois.edu/ugl/">University of Illinois's Undergraduate Library</a>.
-					</p>
-				</section>
-				<!--close section-->
-				
-			</div>
-			<!-- close .span4 --> 
-			<div class="span4">				
-				<section>
-					<div class="footer-header">Sponsors</div>					
-					<p>
-						</a>
-						Topic Space web services developed with support from an <a href= "http://minrvaproject.org/sponsors_sparks.php">IMLS Sparks! Grant</a>.
-					</p>
-				</section>
-				<!--close section-->
-				
-			</div>
-			<!-- close .span4 --> 
-		</div>
-		<!-- close .row-fluid--> 
-	</div>
-	<!-- close footer .container--> 
-	
-	<!--start credits-->
-	<section class="footerCredits">
-		<div class="container">
-			<ul class="clearfix">
-				<li>© 2014 University of Illinois Board of Trustees</li>
-			</ul>
-		</div>
-		<!--footerCredits container--> 
-	</section>
-	<!--close section--> 
-</footer>		<!--/.footer--> 	
+<div id="bottom">
+    <div class="spacer"></div>
+    <p class="copyright-text">&copy; 2016 University of Illinois</p>
+    <div class="home-logo">
+    <span class="icon fa-stack fa-1x left-icon">
+        <i class="fa fa-circle fa-stack-2x orange-circle"></i>
+        <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+    </span>
+        <h4 id="home-text" class="right-text">Home</h4>
+    </div>
+</div>
 </body>
 </html> 

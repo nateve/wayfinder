@@ -43,7 +43,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 }    
 body {
-	background:#fcf8e5;
+	background:white;
 	font-size: 12px;
     font-size: 1.2rem;
     line-height: 1.6;
@@ -55,8 +55,8 @@ body {
 
 /*	Text Color
 ========================================================== */
-body, html, a { color: #412110 }
-h1, h2, h3, h4, h5, h6, .slide-to-top .trigger { color: #a3803c }
+body, html, a { color: black }
+h1, h2, h3, h4, h5, h6, .slide-to-top .trigger { color: black }
 h1 a, h2 a, h3 a, h5 a, h4 a { color: inherit }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .slide-to-top .trigger:hover { color: #412110 }
 
