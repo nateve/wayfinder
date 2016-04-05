@@ -207,13 +207,13 @@ var BookChooseView = Backbone.View.extend({
 					$('#nothing').hide();
 				for (i = 0; i < count; i++) {
 						text += "<li class='item' value='"+ res.attributes[i].bibId +"' formatvalue='"+ res.attributes[i].format +"' style='cursor: pointer; !important'>";
-						text += "<a data-toggle='tab' class=''>";
-						text += "<img src='"+res.attributes[i].thumbnail+"' id='butts' style='position:relative; !important' alt='the image cannot be shown' class='thumbnail'/>";
+						text += "<a data-toggle='tab' class='' onmouseover=this.style.color='black'>";
+						text += "<img src='"+res.attributes[i].thumbnail+"' id='butts' style='border: solid lightgray 0.5px;position:relative; !important' alt='the image cannot be shown' class='thumbnail'/>";
 						text += "<div class='item-descr'>";
-						text += "<p><h5>"+res.attributes[i].title+"</h5></p>";
-						text += "<p>Author: <b>"+res.attributes[i].author+"</b></p>";
-						text += "<p>Publication Year: <b>"+res.attributes[i].pubYear+"</b></p>";
-						text += "<p>Format: <b>"+res.attributes[i].format+"</b></p>";
+						text += "<p><h4 style='color:#082644; font-weight: bolder';>"+res.attributes[i].title+"</h4></p>";
+						text += "<p><b>Author: </b>"+res.attributes[i].author+"</p>";
+						text += "<p><b>Publication Year: </b>"+res.attributes[i].pubYear+"</p>";
+						text += "<p><b>Format: </b>"+res.attributes[i].format+"</p>";
 						text += "</div>";
 						text += "<img src='./assets/images/format_icons/"+that.formatIcons[res.attributes[i].format]+".png' alt='format icon' class='format-icon'/>";
 						text += "</a>";

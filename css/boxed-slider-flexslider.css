@@ -106,7 +106,7 @@
 
 /* device width 600 px to 800 px
 ================================================== */
-@media only screen and (min-width: 600px) and (max-width:800px) { 
+@media only screen and (min-width: 600px) and (max-width:800px) {
     .boxed-slider.flexslider .caption h2 {
         font-size: 180%;
         line-height: 1.2;
@@ -120,7 +120,7 @@
 
 /* up to 767px wide
 ================================================== */
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
 
 	.boxed-slider-wrapper {
  	   margin: 10px 0 4% 0;
@@ -184,29 +184,29 @@
 
 } /* end */
 
-/* ================================================== 
+/* ==================================================
 	MAIN RETINA BACKGROUND IMAGE REPLACEMENT & RETINA INFORMATION
 ================================================== */
 
-/*	change the webkit number to 1 to test on webkit to make sure 
+/*	change the webkit number to 1 to test on webkit to make sure
 	the sizes and the images show up correctly then switch back before launch */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
  	only screen and (-o-min-device-pixel-ratio: 3/2),
  	only screen and (min--moz-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) 
+	only screen and (min-device-pixel-ratio: 2)
 {
 
 .boxed-slider.flexslider .flex-direction-nav a.flex-next,
 .boxed-slider.flexslider .flex-direction-nav a.flex-prev {
     background-image:url(../images/retina/sliderarrows_@2x.png);
-			-moz-background-size:360px 100px; 
+			-moz-background-size:360px 100px;
              -ie-background-size:360px 100px;
               -o-background-size:360px 100px;
        	 -webkit-background-size:360px 100px;
                  background-size:360px 100px;
 
-} 
+}
 
 
 
