@@ -89,11 +89,14 @@ a.brand.with-img
   padding: 0px;
 }
 
+/*CHANGED*/
 .nav img,
 a#toptitle,
 .inline
 {
-  display:inline;
+    display:inline;
+    font-size: 52px;
+    padding-left:10px;
 }
 
 
@@ -119,9 +122,10 @@ a#toptitle,
   display: block;
 }
 
+/*CHANGED*/
 .img-label {
-    padding: 10px;
-    margin-top: 10px;
+    padding-top: 50px;
+
 }
 
 .search-input
