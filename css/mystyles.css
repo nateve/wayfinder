@@ -95,7 +95,7 @@ a#toptitle,
 .inline
 {
     display:inline;
-    font-size: 52px;
+    font-size: 40px;
     padding-left:10px;
 }
 
@@ -123,9 +123,23 @@ a#toptitle,
 }
 
 /*CHANGED*/
-.img-label {
-    padding-top: 50px;
 
+.img-label {
+  padding-top: 20px;
+  height: 80px;
+  display:inline-block;
+  width: 100%;
+}
+.new-search {
+  border-radius:5px;
+  background-color: #f05a24;
+  color:white;
+  border: hidden;
+  height: 50px;
+  width: 140px;
+  font-size: 17px;
+  float:right;
+  margin-top: 30px;
 }
 
 .search-input
@@ -155,31 +169,12 @@ a#toptitle,
 
   /* Wrapper for page content to push down footer */
   #wrap {
-    min-height: 100%;
+    min-height: 680px;
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */
-    margin: 0 auto -200px;
+    margin: 0 auto;
   }
-
-  /* Set the fixed height of the footer here */
-  #push,
-  #footer {
-    height: 200px;
-  }
-  #footer {
-  }
-
-  /* Lastly, apply responsive CSS fixes as necessary */
-  @media (max-width: 767px) {
-    #footer {
-      margin-left: -20px;
-      margin-right: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
 
 
   /* Custom page CSS
