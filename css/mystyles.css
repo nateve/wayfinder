@@ -96,7 +96,6 @@ a#toptitle,
 {
     display:inline;
     font-size: 40px;
-    padding-left:10px;
 }
 
 
@@ -108,9 +107,24 @@ a#toptitle,
 
 .highlight-box
 {
-  background-color: #ccdef3;
-  min-height: 400px;
-  padding-bottom: 30px;
+    background-color: #ccdef3;
+    min-height: 400px;
+    padding-bottom: 30px;
+}
+
+.highlight-box-info{
+    margin-top: 10px;
+    padding-top: 40px;
+    background-color: #ccdef3;
+    min-height: 400px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#map-image-img{
+    height: 357px;
+    background-size: cover;
 }
 
 #intro-info
@@ -125,21 +139,36 @@ a#toptitle,
 /*CHANGED*/
 
 .img-label {
-  padding-top: 20px;
+  padding-top: 10px;
   height: 80px;
   display:inline-block;
   width: 100%;
 }
+
 .new-search {
+     border-radius:5px;
+     background-color: #f05a24;
+     color:white;
+     border: hidden;
+     height: 50px;
+     width: 140px;
+     font-size: 17px;
+     float:right;
+     margin-top: 30px;
+     margin-left: 20px;
+ }
+
+.new-search-long {
   border-radius:5px;
   background-color: #f05a24;
   color:white;
   border: hidden;
   height: 50px;
-  width: 140px;
+  width: 210px;
   font-size: 17px;
   float:right;
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 .search-input

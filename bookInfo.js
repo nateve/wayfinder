@@ -77,6 +77,7 @@ var MapView = Backbone.View.extend({
 		return false; // prevents the browser from redirecting to path
 	},
 	updateImage: function(mapName) {
+		mapName = "1_undergrad_2.png";
 		//http://minrva.library.illinois.edu/api/wayfinder/map/13_stacks.png?x=943&y=977
 		var newUrl = 'http://minrva-dev.library.illinois.edu/api/wayfinder/map/' + mapName + '?x=' + mapModel.get('x') + '&y=' + mapModel.get('y');
 		$("#map-image-img").attr("src", newUrl);

@@ -1109,14 +1109,17 @@ a.badge:hover {
 
 table {
     max-width: 100%;
-    background-color: transparent;
+    background-color: white;
     border-collapse: collapse;
     border-spacing: 0
 }
 
 .table {
     width: 100%;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .table th,
@@ -1125,7 +1128,7 @@ table {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid #dfcea1
+    font-size: small;
 }
 
 .table th {
@@ -1159,7 +1162,7 @@ table {
 }
 
 .table-bordered {
-    border: 1px solid #dfcea1;
+    border: 1px solid lightgrey;
     border-collapse: collapse;
     *border-collapse: collapse;
     border-left: 0;
@@ -1170,7 +1173,9 @@ table {
 
 .table-bordered th,
 .table-bordered td {
-    border-left: 1px solid #dfcea1
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .table-bordered caption+thead tr:first-child th,
@@ -2948,6 +2953,7 @@ input[type="submit"].btn.btn-mini {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
 }
 
+
 .nav-list>li>a {
     padding: 3px 15px
 }
@@ -4190,9 +4196,10 @@ input[type="submit"].btn.btn-mini {
 .pager li>a,
 .pager li>span {
     display: inline-block;
-    padding: 5px 14px 5px 0;
+    padding: 0px 5px 5px 5px;
+    height: 20px;
+    width: 100px;
     border: 0;
-    background: transparent
 }
 
 .pager li>a:hover {
@@ -4242,7 +4249,11 @@ input[type="submit"].btn.btn-mini {
 
 .pager a {
     text-decoration: none;
-    color: #A5803D
+    border-radius:5px;
+    background-color: #f05a24;
+    color:white;
+    border: hidden;
+    font-size: 17px;
 }
 
 .pager .disabled>a,
