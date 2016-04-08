@@ -12,8 +12,8 @@
                     <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
              </span>
              <h1 class="inline">Item Location</h1>
-             <button class="new-search" type="reset"><i class="fa fa-reply"></i>&nbsp;&nbsp;New Search</button>
-             <button class="new-search-long" type="reset"><i class="fa fa-arrow-circle-left "></i>&nbsp;&nbsp;Back to search results</button>
+             <button class="new-search" type="reset" onclick="window.location = 'index.html#loc/uiu_undergrad'"><i class="fa fa-reply"></i>&nbsp;&nbsp;New Search</button>
+             <button class="new-search-long" type="reset" onclick="window.history.back();"><i class="fa fa-arrow-circle-left "></i>&nbsp;&nbsp;Back to search results</button>
        </div>
 
 
@@ -59,7 +59,7 @@
                            <tr>
                                <th>Format</th>
                                <td id="shelf-click"></td>
-                               <td id="shelf-hidden" style="display:none"><%=model.get('format')%></td>
+                               <td id="shelf-hidden" style="display:none"><%=model.get('bibID')%></td>
                            </tr>
                            <tr>
                                <th>Publication</th>
@@ -67,14 +67,6 @@
                                <td id="shelf-hidden" style="display:none"><%=model.get('shelf_number')%></td>
                            </tr>
 
-                           <!--<tr style="display:none">-->
-                               <!--<th>Format</th>-->
-                               <!--<td><div id="bib-id"><%=model.get('bib-id')%></div></td>-->
-                           <!--</tr>-->
-                           <!--<tr style="display:none">-->
-                               <!--<th>Publicatoin Date</th>-->
-                               <!--<td><div id="publicatoin-date"><%=model.get('publicatoinDate')%></div></td>-->
-                           <!--</tr>-->
                            <tr>
                                <th> Summary </th>
                                <td id="summary" style="cursor: pointer;"> <center><i>Click here for a short description</i></center> </td>
@@ -142,7 +134,7 @@
            height: 400px;
            padding: 16px;
            border: 2px solid #412110;
-           background-color: #dfcea1;
+           background-color: white;
            z-index:1002;
            overflow: auto;
        }
@@ -152,7 +144,7 @@
            right: 0;
            font-size: 3em;
            font-style: bold;
-           color: #a3803c;
+           color: black;
            line-height: 0;
            padding: 0px 16px;
            margin-top: 20px;
