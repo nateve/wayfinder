@@ -1116,8 +1116,8 @@ table {
 
 .table {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: -20px;
+    margin-bottom: 40px;
+    margin-top: 27px;
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -3024,7 +3024,6 @@ input[type="submit"].btn.btn-mini {
     padding-top: 8px;
     padding-bottom: 8px;
     line-height: 20px;
-    border: 1px solid transparent;
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0

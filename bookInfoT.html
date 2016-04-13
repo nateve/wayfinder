@@ -58,13 +58,11 @@
                            </tr>
                            <tr>
                                <th>Format</th>
-                               <td id="shelf-click"></td>
-                               <td id="shelf-hidden" style="display:none"><%=model.get('bibID')%></td>
+                               <td id="format"></td>
                            </tr>
                            <tr>
                                <th>Publication</th>
-                               <td id="shelf-click"></td>
-                               <td id="shelf-hidden" style="display:none"><%=model.get('shelf_number')%></td>
+                               <td id="publication"><%=model.get('published')%></td>
                            </tr>
 
                            <tr>
@@ -72,8 +70,6 @@
                                <td id="summary" style="cursor: pointer;"> <center><i>Click here for a short description</i></center> </td>
                            </tr>
 
-                           <tr id="ts-button" style="display:none"><th>Related Books</th><td><center><button type="submit" class="btn btn-default" id="call-number" style="width: 174px; height:45px; border: solid 1px rgba(117, 81, 2, 0.75);">
-                               Topic Space <img src = "assets/images/topic_space_button_transparent.png" style="display: inline-block; width: 35px;"></button></center></td></tr>
 
                            </table><td style="border: 0px solid #000; !important"></td>
                        </td>
@@ -99,8 +95,7 @@
        .rounded-img2 {
            display: -webkit-box;
            max-height: 316px;
-           margin: 10px;
-           border: solid 1px #000;
+           margin: 5px;
            overflow: hidden;
            -webkit-border-radius: 0px;
            -moz-border-radius: 0px;

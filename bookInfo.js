@@ -37,8 +37,11 @@ var MapView = Backbone.View.extend({
 		this.$el.html(temp({model:mapModel}));
 
 		//if the user is looking at a book in undergrad then the topic space button will appear
-		console.log(mapModel.location);
-		console.log(mapModel.format);
+
+		$("#format").html(mapModel.attributes["format"]);
+		var pubYear = mapModel.attributes["call_num"].split(" ");
+		pubYear = pubYear[pubYear.length-1];
+		$("#publication").html(pubYear);
 		if (mapModel.location == "uiu_undergrad" && mapModel.format == "Book")
 		{
 			$("#ts-button").show();
